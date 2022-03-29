@@ -34,21 +34,21 @@ This can be broken down into its various segments
 
 
 ### Anchors
-The two primary anchors in this example are ^ (at the beginning) and $ (at the end).
+The two primary anchors in this example are `^` (at the beginning) and `$` (at the end).
 
-When the ^ anchor appears at the start of the regex, the search will match with any string that begins with the characters immediately following ^.
+When the `^` anchor appears at the start of the regex, the search will match with any string that begins with the characters immediately following `^`.
 
-When the $ anchor appears at the end of the regex, the search will match with any string that ends with the characters immediately preceding $.
+When the `$` anchor appears at the end of the regex, the search will match with any string that ends with the characters immediately preceding `$`.
 
-By including both of these anchors, the search will match exactly what is included between ^ and $.
+By including both of these anchors, the search will match exactly what is included between `^` and `$`.
 
 
 ### Quantifiers
 Quantifiers can be used to specify the expected length of the input or to specify how many matches the regex should find.
 
- - ? - indicates that the preceding object is optional.  In the above example, the first ? indicates the string can start with http or https.  Additionally, the string in the brackets preceding the second ? (ie http:// or https://) is optional
- - + - indicates matching at least one of the preceding array of characters; in the above example, to match any digit, any letter from a to z, a period or a hyphen
-    - this is further tailored with ([array]{x,y}), which determine the minimum (x) and maximum (y) characters in the preceding array and ([array]{x,y}*), which allows any number of the charactern in the preceding array including zero
+ - `?` - indicates that the preceding object is optional.  In the above example, the first ? indicates the string can start with http or https.  Additionally, the string in the brackets preceding the second `?` (ie `http://` or `https://`) is optional
+ - `+` - indicates matching at least one of the preceding array of characters; in the above example, to match any digit, any letter from a to z, a period or a hyphen
+    - this is further tailored with `([array]{x,y})`, which determine the minimum (x) and maximum (y) characters in the preceding array and `([array]{x,y}*)`, which allows any number of the charactern in the preceding array including zero
 
 
 ### Grouping Constructs
@@ -60,7 +60,7 @@ Quantifiers can be used to specify the expected length of the input or to specif
 
 
 ### Character Classes
-
+The characxter classes are a shorthand way of expressing a full set of a particular character type.  In the above example, `\d` specifies any digits and `\w` specifies any alphanumeric characters.
 
 
 ### The OR Operator
