@@ -51,7 +51,7 @@ Quantifiers can be used to specify the expected length of the input or to specif
 
 
 ### Grouping Constructs
-
+Various groups are differentiated using plain brackets, not only allowing each group to have individual quantifiers, but facilitating changes and substitutions with entire group strings.
 
 
 ### Bracket Expressions
@@ -59,7 +59,7 @@ Bracket expressions encompass a collection or string to apply quantifiers and fl
 
 
 ### Character Classes
-The characxter classes are a shorthand way of expressing a full set of a particular character type.  In the above example, `\d` specifies any digits and `\w` specifies any alphanumeric characters.
+The characxter classes are a shorthand way of expressing a full set of a particular character type.  In the above example, `\d` specifies any digits and `\w` specifies any alphanumeric characters.  Another class not used in the above example is `\s`, which specifies any whitespace.
 
 
 ### The OR Operator
