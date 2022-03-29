@@ -2,6 +2,7 @@
 
 Regular expressions (Regex) in coding refer to a short series of characters that can define a search pattern.  It includes accepted characters (and by default, excludes non-accepted characters)
 
+
 ## Summary
 
 The regex to recognise a valid URL looks for both accepted characters and correct formatting.  Ultimately, it identifies whether the provided string is a valid URL.
@@ -10,6 +11,7 @@ An example of such a regex is:
 ````
 /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
 ```` 
+
 
 ## Table of Contents
 
@@ -22,6 +24,7 @@ An example of such a regex is:
 - [Flags](#flags)
 - [Character Escapes](#character-escapes)
 
+
 ## Regex Components
 An example of a regex to identify a URL is:
 ````
@@ -29,7 +32,15 @@ An example of a regex to identify a URL is:
 ```` 
 This can be broken down into its various segments
 
+
 ### Anchors
+The two primary anchors in this example are ^ (at the beginning) and $ (at the end).
+
+When the ^ anchor appears at the start of the regex, the search will match with any string that begins with the characters immediately following ^.
+
+When the $ anchor appears at the end of the regex, the search will match with any string that ends with the characters immediately preceding $.
+
+By including both of these anchors, the search will match exactly what is included between ^ and $.
 
 
 ### Quantifiers
