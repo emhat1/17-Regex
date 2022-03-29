@@ -4,7 +4,12 @@ Regular expressions (Regex) in coding refer to a short series of characters that
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+The regex to recognise a valid URL looks for both accepted characters and correct formatting.  Ultimately, it identifies whether the provided string is a valid URL.
+
+An example of such a regex is:
+````
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
+```` 
 
 ## Table of Contents
 
@@ -18,8 +23,14 @@ Briefly summarize the regex you will be describing and what you will explain. In
 - [Character Escapes](#character-escapes)
 
 ## Regex Components
+An example of a regex to identify a URL is:
+````
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
+```` 
+This can be broken down into its various segments
 
 ### Anchors
+
 
 ### Quantifiers
 
