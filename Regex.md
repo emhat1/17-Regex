@@ -45,18 +45,37 @@ By including both of these anchors, the search will match exactly what is includ
 
 ### Quantifiers
 
+
+
 ### Grouping Constructs
+
+
 
 ### Bracket Expressions
 
+
+
 ### Character Classes
+
+
 
 ### The OR Operator
 
+
+
 ### Flags
+
+Although flags are not applicable to the example given above, they can alter how a regex identifies a string.  Following the final / a flag can be added to further tailor the search. Flags include:
+
+ - g (global flag) will recognise all instances of the string in a given input
+ - m (multiline flag) will recognise the start and end of a line where the pattern occurs, as opposed to just the string itself
+ - i (insensitive flag) will identify the string irrespective of case
+
 
 ### Character Escapes
 
+
+
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Erin Hatherell is an aspiring full stack web developer based in Melbourne, Australia - [mambru82 on GitHub](https://github.com/emhat1)
