@@ -44,7 +44,11 @@ By including both of these anchors, the search will match exactly what is includ
 
 
 ### Quantifiers
+Quantifiers can be used to specify the expected length of the input or to specify how many matches the regex should find.
 
+ - ? - indicates that the preceding object is optional.  In the above example, the first ? indicates the string can start with http or https.  Additionally, the string in the brackets preceding the second ? (ie http:// or https://) is optional
+ - + - indicates matching at least one of the preceding array of characters; in the above example, to match any digit, any letter from a to z, a period or a hyphen
+    - this is further tailored with ([array]{x,y}), which determine the minimum (x) and maximum (y) characters in the preceding array and ([array]{x,y}*), which allows any number of the charactern in the preceding array including zero
 
 
 ### Grouping Constructs
@@ -64,7 +68,6 @@ By including both of these anchors, the search will match exactly what is includ
 
 
 ### Flags
-
 Although flags are not applicable to the example given above, they can alter how a regex identifies a string.  Following the final / a flag can be added to further tailor the search. Flags include:
 
  - g (global flag) will recognise all instances of the string in a given input
