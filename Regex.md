@@ -4,7 +4,6 @@ Regular expressions (Regex) in coding refer to a short series of characters that
 
 
 ## Summary
-
 The regex to recognise a valid URL looks for both accepted characters and correct formatting.  Ultimately, it identifies whether the provided string is a valid URL.
 
 An example of such a regex is:
@@ -56,7 +55,7 @@ Quantifiers can be used to specify the expected length of the input or to specif
 
 
 ### Bracket Expressions
-
+Bracket expressions encompass a collection or string to apply quantifiers and flags (such as `(https?:\/\/)` before the `?` quantifier).  Metacharacters are not recognised within the brackets - all characters are read literally.
 
 
 ### Character Classes
@@ -80,5 +79,4 @@ Although flags are not applicable to the example given above, they can alter how
 
 
 ## Author
-
-Erin Hatherell is an aspiring full stack web developer based in Melbourne, Australia - [mambru82 on GitHub](https://github.com/emhat1)
+Erin Hatherell is an aspiring full stack web developer based in Melbourne, Australia - [emhat1 on GitHub](https://github.com/emhat1)
